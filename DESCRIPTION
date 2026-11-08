@@ -1,0 +1,44 @@
+Package: amanuensis
+Title: Turn Scanned Historical Documents into Data with Gemini
+Version: 0.2.0
+Authors@R:
+    person("Marcelo", "Pi-Suñer", email = "marce.pisuner@gmail.com",
+           role = c("aut", "cre"))
+Description: A friendly workflow for turning photographs and scans of
+    historical sources (rosters, ledgers, censuses, letters, printed tables)
+    into tidy data. A vision language model (Google Gemini) reads each page
+    image and returns records that follow a codebook you write in a
+    spreadsheet; the package handles the images, the API calls, resuming
+    interrupted runs, validation, costs, export to Excel/Stata/CSV/Word, and
+    measuring accuracy against a hand-made gold standard.
+License: MIT + file LICENSE
+URL: https://github.com/marcelopisuner/amanuensis-r
+BugReports: https://github.com/marcelopisuner/amanuensis-r/issues
+Encoding: UTF-8
+Language: en-GB
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends:
+    R (>= 4.2)
+Imports:
+    askpass,
+    cli (>= 3.6.0),
+    httr2 (>= 1.1.1),
+    jsonlite (>= 1.8.0),
+    magick (>= 2.8.0),
+    openssl,
+    pdftools (>= 3.9.1),
+    readxl (>= 1.4.0),
+    rlang (>= 1.1.0),
+    utf8 (>= 1.2.0),
+    writexl (>= 2.0.0),
+    zip (>= 2.3.0),
+    utils,
+    stats,
+    tools
+Suggests:
+    haven,
+    shiny,
+    testthat (>= 3.0.0),
+    withr
+Config/testthat/edition: 3

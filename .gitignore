@@ -1,0 +1,11 @@
+.claude/
+.DS_Store
+
+# working notes, kept out of the public repository
+NOTES.md
+
+# R and RStudio
+.Rproj.user/
+.Rhistory
+*.Rcheck/
+*.tar.gz

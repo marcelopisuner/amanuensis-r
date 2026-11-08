@@ -1,0 +1,10 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^data-raw$
+^NOTES\.md$
+^LICENSE\.md$
+^README\.Rmd$
+^\.github$
+^.*\.tar\.gz$
+^amanuensis\.Rcheck$
+^\.claude$
