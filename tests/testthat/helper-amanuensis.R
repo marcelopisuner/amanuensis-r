@@ -20,6 +20,18 @@ local_amanuensis <- function(env = parent.frame(), key = FAKE_KEY) {
   invisible()
 }
 
+# Prices as on `day` for the rest of the calling test: the model table
+# announces price changes on dates, so a test of today's prices would fail on
+# the day one takes effect.
+local_price_date <- function(day, env = parent.frame()) {
+  day <- as.Date(day)
+  real <- .price_for
+  local_mocked_bindings(
+    .price_for = function(model, date = day, discount = FALSE, prices = NULL) real(model, date, discount, prices),
+    .env = env
+  )
+}
+
 # n small JPEGs of distinct colours (so each page's bytes, and so its base64,
 # differ), named p001.jpg, p002.jpg, ... in `dir`. Returns the paths.
 make_jpegs <- function(dir, n = 3, prefix = "p", width = 60, height = 40) {

@@ -266,6 +266,7 @@ test_that("before any page is measured, a batch budget covers the most the batch
 })
 
 test_that("a batch that costs more than its budget, measured on earlier pages, says so", {
+  local_price_date("2026-11-08")
   s <- batch_setup(n = 4)
   srv <- fake_batch(reply = function(key, request) {
     list(key = key, response = gemini_reply(data = roster_data(key), output = if (key %in% c("p001.jpg", "p002.jpg")) 10L else 20000L))

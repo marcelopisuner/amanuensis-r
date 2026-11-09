@@ -837,6 +837,7 @@ test_that("the cost projection after batch pages is at the standard price, halve
 })
 
 test_that("batch pages collected from an earlier call do not count towards this run's budget", {
+  local_price_date("2026-11-08")
   local_amanuensis()
   dir <- withr::local_tempdir()
   pages <- file.path(dir, "pages")
