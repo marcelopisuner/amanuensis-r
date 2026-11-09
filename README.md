@@ -1,10 +1,8 @@
 # amanuensis
 
-> [!WARNING]
-> **Beta version.** amanuensis is still in development and testing. It has
-> been tested and is believed to be safe to use, but it is new: start with a
-> few pages, check the results before you rely on them, and please
-> [report any problem](https://github.com/marcelopisuner/amanuensis-r/issues).
+[![R-CMD-check](https://github.com/marcelopisuner/amanuensis-r/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/marcelopisuner/amanuensis-r/actions/workflows/R-CMD-check.yaml) [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
+Beta: details may change before 1.0; please [report](https://github.com/marcelopisuner/amanuensis-r/issues) anything that looks wrong.
 
 **Turn photographs and scans of historical documents into data, from R.**
 
